@@ -2,5 +2,6 @@
   <PropertyGroup>
     <PackageId>KubernetesCRDModelGen.Models.aquasecurity.github.io</PackageId>
     <RepositoryUrl>https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models.aquasecurity.github.io</RepositoryUrl>
+    <Description>C# models for Kubernetes CRDs in group aquasecurity.github.io</Description>
   </PropertyGroup>
 </Project>
