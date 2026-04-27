@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.aquasecurity.github.io;
 /// <summary>ConfigAuditReport is a specification for the ConfigAuditReport resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1ConfigAuditReportList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1ConfigAuditReport>
@@ -33,11 +33,11 @@ public partial class V1alpha1ConfigAuditReportList : IKubernetesObject<V1ListMet
 
     /// <summary>List of V1alpha1ConfigAuditReport objects.</summary>
     [JsonPropertyName("items")]
-    public IList<V1alpha1ConfigAuditReport>? Items { get; set; }
+    public required IList<V1alpha1ConfigAuditReport> Items { get; set; }
 }
 
 /// <summary>Scope indicates the section of config that was audited.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ConfigAuditReportReportChecksScope
 {
@@ -51,7 +51,7 @@ public partial class V1alpha1ConfigAuditReportReportChecksScope
 }
 
 /// <summary>Check provides the result of conducting a single audit step.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ConfigAuditReportReportChecks
 {
@@ -87,7 +87,7 @@ public partial class V1alpha1ConfigAuditReportReportChecks
 }
 
 /// <summary>Scanner is the spec for a scanner generating a security assessment report.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ConfigAuditReportReportScanner
 {
@@ -105,7 +105,7 @@ public partial class V1alpha1ConfigAuditReportReportScanner
 }
 
 /// <summary>ConfigAuditSummary counts failed checks by severity.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ConfigAuditReportReportSummary
 {
@@ -126,7 +126,7 @@ public partial class V1alpha1ConfigAuditReportReportSummary
     public required int MediumCount { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ConfigAuditReportReport
 {
@@ -147,7 +147,7 @@ public partial class V1alpha1ConfigAuditReportReport
 }
 
 /// <summary>ConfigAuditReport is a specification for the ConfigAuditReport resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1ConfigAuditReport : IKubernetesObject<V1ObjectMeta>

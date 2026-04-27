@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.aquasecurity.github.io;
 /// <summary>ExposedSecretReport summarizes exposed secrets in plaintext files built into container images.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1ExposedSecretReportList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1ExposedSecretReport>
@@ -33,14 +33,14 @@ public partial class V1alpha1ExposedSecretReportList : IKubernetesObject<V1ListM
 
     /// <summary>List of V1alpha1ExposedSecretReport objects.</summary>
     [JsonPropertyName("items")]
-    public IList<V1alpha1ExposedSecretReport>? Items { get; set; }
+    public required IList<V1alpha1ExposedSecretReport> Items { get; set; }
 }
 
 /// <summary>
 /// Artifact represents a standalone, executable package of software that includes everything needed to
 /// run an application.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ExposedSecretReportReportArtifact
 {
@@ -62,7 +62,7 @@ public partial class V1alpha1ExposedSecretReportReportArtifact
 }
 
 /// <summary>Registry is the registry the Artifact was pulled from.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ExposedSecretReportReportRegistry
 {
@@ -72,7 +72,7 @@ public partial class V1alpha1ExposedSecretReportReportRegistry
 }
 
 /// <summary>Scanner is the scanner that generated this report.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ExposedSecretReportReportScanner
 {
@@ -90,7 +90,7 @@ public partial class V1alpha1ExposedSecretReportReportScanner
 }
 
 /// <summary>Severity level of a vulnerability or a configuration audit check.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1ExposedSecretReportReportSecretsSeverityEnum>))]
 public enum V1alpha1ExposedSecretReportReportSecretsSeverityEnum
 {
@@ -105,7 +105,7 @@ public enum V1alpha1ExposedSecretReportReportSecretsSeverityEnum
 }
 
 /// <summary>ExposedSecret is the spec for a exposed secret record.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ExposedSecretReportReportSecrets
 {
@@ -133,7 +133,7 @@ public partial class V1alpha1ExposedSecretReportReportSecrets
 }
 
 /// <summary>Summary is the exposed secrets counts grouped by Severity.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ExposedSecretReportReportSummary
 {
@@ -155,7 +155,7 @@ public partial class V1alpha1ExposedSecretReportReportSummary
 }
 
 /// <summary>Report is the actual exposed secret report data.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ExposedSecretReportReport
 {
@@ -188,7 +188,7 @@ public partial class V1alpha1ExposedSecretReportReport
 }
 
 /// <summary>ExposedSecretReport summarizes exposed secrets in plaintext files built into container images.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1ExposedSecretReport : IKubernetesObject<V1ObjectMeta>
